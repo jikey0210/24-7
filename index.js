@@ -8,7 +8,7 @@ const { joinVoiceChannel } = require('@discordjs/voice');
 client.on('ready', () => {
   client.user.setActivity("Youtube", { type: "STREAMING", url: "https://www.youtube.com/watch?v=Zming5TY_pQ" })
   setInterval(async () => {
-    client.channels.fetch("")
+    client.channels.fetch("1213153438012149850")
       .then((channel) => {
         const VoiceConnection = joinVoiceChannel({
           channelId: channel.id,
